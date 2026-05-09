@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mahesh</title>
 </head>
 <body>
-    <h1>Welcome to HTML</h1>
-    <p>This is a simple HTML page.updated</p>
+	<h2 class = "first">here am creating the button</h2>
+	<button onclick="showMessage()">Submit</button><br><br>
+	<script>
+
+		// String 
+		let name = "Mahesh";
+		let city = "Hyderabad";
+
+		console.log(typeof name); // Output: string
+		console.log(typeof city); // Output: string
+		console.log(name + " is from " +city);
+
+		//Number
+		let age = 25;
+		let salary = 90000.678;
+		console.log(typeof age); // Output: number
+		console.log(age);
+		console.log(salary);
+
+		//Boolean
+		let isJavaDeveloper = true;
+		let isMarriged = false;
+		console.log(typeof isJavaDeveloper); // Output: boolean
+		console.log(isMarriged);
+
+		//Undefined
+		let mobile;
+		console.log(typeof mobile);
+		console.log(mobile);
+
+		//null
+		let address = null;
+		console.log(typeof address);
+		console.log(address);
+
+		//bigint
+		let biNumber = 1234567890123456789012345678901234567890n;
+		console.log(typeof biNumber);
+		console.log(biNumber);
+
+		//symbol
+		let id = Symbol("employeeId");
+		console.log(id);
+		console.log(typeof id);
+
+		//Arrays
+		let skills = ["java","javaScript","python","HTML","CSS",25,true];
+		console.log(typeof skills);
+		console.log(skills);
+		
+		//Objects
+		let employee = [{
+			name : "Mahesh",
+			age : 25,
+			role : "Java Developer",
+			Married: false
+		},
+		{
+			name : "Ramesh",
+			age : 30,
+			role : "Python Developer",
+			Married: true
+		}
+		];
+		console.log(typeof employee);
+		console.log(employee);
+
+		//Function
+		function greet() {
+			return "Hello, welcome to JavaScript!";
+		}
+		console.log(typeof greet);
+		console.log(greet());
+
+	</script>
+	<p id = "demo"></p>
 </body>
-</html> 
+</html>
